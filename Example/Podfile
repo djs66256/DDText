@@ -1,0 +1,21 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'DDTextExample' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  pod 'DDText', :path=>'../'
+
+  # Pods for DDTextDemo
+
+  target 'DDTextExampleTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'DDTextExampleUITests' do
+    # Pods for testing
+  end
+
+end
