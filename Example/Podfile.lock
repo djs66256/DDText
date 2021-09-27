@@ -1,28 +1,18 @@
 PODS:
-  - DDText (0.0.1):
-    - DDText/All (= 0.0.1)
-  - DDText/All (0.0.1):
-    - DDText/BuilderObjc
-    - DDText/BuilderSwift
+  - DDText/Label (1.0.0)
+  - DDText/Parser (1.0.0):
     - DDText/Label
-    - DDText/Parser
-  - DDText/BuilderObjc (0.0.1):
-    - DDText/Label
-  - DDText/BuilderSwift (0.0.1):
-    - DDText/Label
-  - DDText/Label (0.0.1)
-  - DDText/Parser (0.0.1)
 
 DEPENDENCIES:
-  - DDText (from `../`)
+  - DDText/Parser (from `../`)
 
 EXTERNAL SOURCES:
   DDText:
     :path: "../"
 
 SPEC CHECKSUMS:
-  DDText: c981888455fa8bf111caf9aa6e0e3f7a67ef77e0
+  DDText: d22fea75c51e7d2b7de0fc8a5e5c50602916a0c3
 
-PODFILE CHECKSUM: 1d2d5980f6170c94ff8a3a7d0d56a4d30d561f89
+PODFILE CHECKSUM: f0301aa43e5cba3bc5543d1019bc3a139e8dfb2a
 
 COCOAPODS: 1.11.0

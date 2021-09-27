@@ -61,6 +61,7 @@ Pod::Spec.new do |spec|
   
   spec.subspec 'Parser' do |s|
     s.source_files  = "Classes", "Classes/TextParser/**/*.{swift}"
+    s.dependency 'DDText/Label'
   end
   
   spec.subspec 'All' do |s|
