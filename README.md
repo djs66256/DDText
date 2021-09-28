@@ -6,7 +6,7 @@ More powerful label, attributed string builder and text parser.
 More powerful label than `UILabel`, using `TextKit`. It supports features below:
 
 1. View attachment. You can add custom views.
-2. User action. Support clicking and highlight throw `GestureRecognize`. And you can custom gesture challenge.
+2. User action. Support clicking and highlight through `GestureRecognize`. And you can custom gesture challenge.
 
 It's free embeded in AutoLayout or Flexbox.
 
