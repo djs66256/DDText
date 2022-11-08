@@ -187,11 +187,13 @@ const NSAttributedStringKey DDHighlightedForegroundColorAttributeName = @"DDHigh
 
     // 在最后一行是\n的时候，numberOfLines会不起作用，UILabel中似乎是对这种场景做了特殊处理的，这里也做同样的处理
     NSString *str = _textStorage.string;
-    NSCharacterSet *newLine = [NSCharacterSet newlineCharacterSet];
-    unichar lastChar = [str characterAtIndex:str.length - 1];
-    if ([newLine characterIsMember:lastChar]) {
-        __auto_type attrs = [_textStorage attributesAtIndex:_textStorage.length - 1 effectiveRange:nil];
-        [_textStorage appendAttributedString:[[NSAttributedString alloc] initWithString:@" " attributes:attrs]];
+    if (str.length > 0) {
+        NSCharacterSet *newLine = [NSCharacterSet newlineCharacterSet];
+        unichar lastChar = [str characterAtIndex:str.length - 1];
+        if ([newLine characterIsMember:lastChar]) {
+            __auto_type attrs = [_textStorage attributesAtIndex:_textStorage.length - 1 effectiveRange:nil];
+            [_textStorage appendAttributedString:[[NSAttributedString alloc] initWithString:@" " attributes:attrs]];
+        }
     }
     
     length = _textStorage.length;
